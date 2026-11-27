@@ -1,1 +1,77 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler | Ada Boztepe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ada Boztepe</h1>
+        <nav aria-label="Ana menü">
+            <button id="menuToggle" aria-expanded="false" aria-controls="navLinks">☰ Menü</button>
+            <ul id="navLinks">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle">🌙 Tema Değiştir</button>
+    </header>
+
+    <main>
+        <h2>Projelerim</h2>
+        <p>Kodlama Okuryazarlığı dersi kapsamında hazırladığım çalışmalar.</p>
+
+        <label for="projectSearch">Proje ara:</label>
+        <input type="search" id="projectSearch" placeholder="Proje adı yazınız">
+
+        <div class="cards" id="projectList">
+
+            <article class="card project-card">
+                <div class="project-icon" role="img" aria-label="Python projesi">🐍</div>
+                <h3>Python Yaş Hesaplama</h3>
+                <p>Kullanıcının doğum yılına göre yaşını hesaplayan Python programı.</p>
+                <p><strong>Ne öğrendim?</strong> Değişkenleri, kullanıcı girdilerini ve koşullu ifadeleri kullanmayı öğrendim.</p>
+                <a href="https://github.com/Ada957/gep1316-portfolyo-">GitHub Projesi</a>
+            </article>
+
+            <article class="card project-card">
+                <div class="project-icon" role="img" aria-label="Algoritma projesi">📊</div>
+                <h3>Algoritma ve Akış Şeması</h3>
+                <p>Bir problemin çözümünü adım adım gösteren algoritma çalışması.</p>
+                <p><strong>Ne öğrendim?</strong> Problemleri küçük adımlara ayırmayı öğrendim.</p>
+                <a href="https://github.com/Ada957?tab=repositories">GitHub Çalışmaları</a>
+            </article>
+
+            <article class="card project-card">
+                <div class="project-icon" role="img" aria-label="Hesap makinesi projesi">🧮</div>
+                <h3>Python Hesaplayıcı</h3>
+                <p>Temel matematiksel işlemleri gerçekleştiren Python uygulaması.</p>
+                <p><strong>Ne öğrendim?</strong> Matematiksel operatörleri ve hata kontrollerini kullanmayı öğrendim.</p>
+                <a href="https://github.com/Ada957?tab=repositories">GitHub Çalışmaları</a>
+            </article>
+
+            <article class="card project-card">
+                <div class="project-icon" role="img" aria-label="Web tasarımı projesi">💻</div>
+                <h3>Kişisel Web Portfolyosu</h3>
+                <p>HTML, CSS ve JavaScript kullanılarak geliştirilen kişisel web sitesi.</p>
+                <p><strong>Ne öğrendim?</strong> Web tasarımı, erişilebilirlik ve duyarlı sayfa düzeni oluşturmayı öğrendim.</p>
+                <a href="https://github.com/Ada957/GEP1316-Web-Portfolyo-">GitHub Projesi</a>
+            </article>
+
+        </div>
+
+        <p id="searchMessage" aria-live="polite"></p>
+    </main>
+
+    <footer>
+        <p>© 2026 Ada Boztepe | GEP1316</p>
+    </footer>
+</body>
+</html>
+
